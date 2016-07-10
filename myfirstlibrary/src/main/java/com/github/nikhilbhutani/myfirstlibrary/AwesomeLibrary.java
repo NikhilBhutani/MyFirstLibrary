@@ -15,7 +15,9 @@ public class AwesomeLibrary {
     }
 
     public static AwesomeLibrary getInstance(){
+        if(instance==null){
         instance = new AwesomeLibrary();
+        }
         return instance;
     }
 
